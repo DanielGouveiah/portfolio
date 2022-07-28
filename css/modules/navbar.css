@@ -1,0 +1,117 @@
+.nav-container {
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 998;
+}
+
+.nav {
+  background-color: var(--principal);
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 10px var(--shadow);
+  position: relative;
+}
+
+.nav .menu {
+  display: flex;
+  color: white;
+}
+
+.nav .menu-mobile {
+  display: none;
+  padding: 10px;
+  background-color: var(--principal);
+  border: none;
+  cursor: pointer;
+}
+
+.nav .menu-mobile span {
+  background-color: #fff;
+  display: block;
+  width: 30px;
+  height: 4px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.nav .menu-mobile span::after {
+  content: "";
+  background-color: #fff;
+  display: block;
+  width: 30px;
+  position: absolute;
+  top: -10px;
+  height: 4px;
+  border-radius: 4px;
+}
+.nav .menu-mobile span::before {
+  content: "";
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  height: 4px;
+  border-radius: 4px;
+}
+
+.nav .menu a {
+  padding: 22px;
+  transition: 0.3s;
+}
+
+.nav .menu a:hover {
+  background-color: black;
+}
+
+@media (max-width: 800px) {
+  .nav .menu-mobile {
+    display: block;
+  }
+  .nav .menu {
+    display: none;
+  }
+
+  .nav .menu.ativo {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    padding: 20px 0px;
+    border-radius: 4px;
+    gap: 10px;
+    background-color: var(--principal);
+    animation: slide-left 0.4s forwards;
+    box-shadow: -4px 10px 10px var(--shadow);
+    z-index: 999;
+  }
+  .nav .menu.ativo li {
+    display: flex;
+    justify-items: center;
+  }
+  nav .menu.ativo a {
+    padding: 16px 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav {
+    padding: 0px 10px;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

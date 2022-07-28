@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  align-items: start;
+  justify-content: center;
+  gap: 40px;
+}
+
+.js .sobre {
+  opacity: 0;
+}
+
+.js .sobre.ativo {
+  opacity: 1;
+  animation: fade-left 1s forwards;
+}
+
+.sobre .perfil .perfil-img {
+  max-width: 400px;
+  height: 250px;
+  background: url(../../assets/perfil.jpg), no-repeat;
+  border-radius: 6px;
+  border: 3px solid black;
+  position: relative;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.sobre .perfil .perfil-img::after {
+  content: "";
+  width: 4px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  right: 0px;
+  border-radius: 6px;
+  background-color: var(--destaque1);
+}
+
+.sobre .perfil .local {
+  color: var(--light-grey);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.sobre .perfil .social-list {
+  display: flex;
+}
+
+.sobre .perfil .social-list a {
+  padding: 10px;
+}
+.sobre .perfil .social-list a:hover img {
+  transition: 0.8s;
+}
+.sobre .perfil .social-list a:hover img {
+  background-color: black;
+  border-radius: 4px;
+}
+
+.sobre .sobre-conteudo {
+  display: grid;
+  align-items: start;
+}
+
+.sobre .sobre-conteudo p {
+  color: var(--light-grey);
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 1.5%;
+  line-height: 1.6rem;
+  margin: 20px 0px 80px;
+  font-family: "Roboto", sans-serif;
+}
+
+.sobre .sobre-conteudo .sobre-btns {
+  display: flex;
+  gap: 10px;
+  justify-self: end;
+}
+
+.sobre .sobre-conteudo .sobre-btns .sobre-btn {
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  gap: 20px;
+  transition: 0.3s;
+}
+
+.sobre .sobre-conteudo .sobre-btns .sobre-btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 800px) {
+  .sobre {
+    grid-template-columns: 1fr;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .sobre .perfil .perfil-img {
+    display: none;
+  }
+  .sobre .sobre-conteudo p {
+    margin: 20px 0px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .sobre .sobre-conteudo p {
+    font-size: 1rem;
+  }
+  .sobre .sobre-conteudo .sobre-btns {
+    flex-direction: column;
+    justify-self: start;
+  }
+}
