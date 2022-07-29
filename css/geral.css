@@ -7,9 +7,23 @@
 }
 
 body {
-  background-color: #121212;
+  background-color: var(--principal);
   font-family: "Rubik", sans-serif;
   overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--principal);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #55c1ff;
+  border-radius: 20px;
+  border: 3px solid var(--principal);
 }
 
 h1,
@@ -39,6 +53,10 @@ section {
   }
   .title {
     font-size: 1.6rem;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0px;
   }
 }
 
