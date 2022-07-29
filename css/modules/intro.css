@@ -22,7 +22,13 @@
   animation: fade-right 1s forwards;
 }
 
-.conteudo span {
+.conteudo .saudacao {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.conteudo .descricao {
   font-size: 1.4rem;
   font-weight: 500;
   color: #b8b8b8;
@@ -63,7 +69,8 @@
     justify-items: center;
   }
   .intro-img {
-    display: none;
+    order: -1;
+    max-width: 300px;
   }
   .conteudo h1 {
     font-size: 2.2rem;
@@ -73,14 +80,19 @@
   .intro {
     grid-template-columns: 1fr;
   }
+
   .intro-img {
-    display: none;
-  }
-  .conteudo span {
-    font-size: 1rem;
+    max-width: 200px;
   }
   .conteudo h1 {
     font-size: 1.6rem;
+  }
+  .conteudo .saudacao {
+    font-size: 1rem;
+  }
+
+  .conteudo .descricao {
+    font-size: 0.8rem;
   }
 }
 
