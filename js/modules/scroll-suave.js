@@ -7,8 +7,10 @@ export default class ScrollSuave {
   scrollSuave(e) {
     e.preventDefault();
     const section = document.querySelector(e.target.hash);
-    const sectionTop = section.getBoundingClientRect().top - 20;
-    window.scroll({ top: sectionTop, behavior: "smooth" });
+    const sectionTop = section.getBoundingClientRect().top;
+    setTimeout(() => {
+      window.scroll({ top: sectionTop, behavior: "smooth" });
+    }, 0);
   }
 
   addElementEvents() {

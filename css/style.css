@@ -1,5 +1,6 @@
-@import url(./reset.css);
-@import url(./geral.css);
+@import url(./geral/reset.css);
+@import url(./geral/geral.css);
 @import url(./modules/navbar.css);
 @import url(./modules/intro.css);
 @import url(./modules/sobre.css);
+@import url(./modules/academico.css);

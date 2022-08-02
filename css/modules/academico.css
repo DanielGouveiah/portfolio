@@ -1,0 +1,133 @@
+.academico {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.js .academico {
+  opacity: 0;
+}
+
+.js .academico.ativo {
+  opacity: 1;
+  animation: fade-right 0.4s forwards;
+}
+
+.academico .academico-texto p {
+  color: var(--light-grey);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4rem;
+  margin: 20px 0px;
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 1.5%;
+  line-height: 1.6rem;
+}
+
+.academico .academico-cursos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 280px));
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.academico-cursos .curso {
+  background-color: black;
+  padding: 20px;
+  color: var(--light-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.academico-cursos .curso a {
+  color: var(--destaque2);
+  text-decoration: underline;
+  align-self: center;
+  position: absolute;
+  transform: 0.3s;
+  bottom: 10px;
+}
+.academico-cursos .curso a:hover {
+  color: white;
+}
+
+.academico-cursos .curso span {
+  font-size: 0.8rem;
+}
+
+.academico-cursos .curso p {
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.academico-cursos .curso h3.facul {
+  color: var(--destaque1);
+}
+
+.academico-cursos .curso h3 {
+  color: var(--destaque2);
+  font-size: 1.2rem;
+}
+
+.ver-mais {
+  display: none;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+.ver-mais:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+  .academico .academico-cursos {
+    grid-template-columns: repeat(2, 280px);
+  }
+}
+
+@media (max-width: 1000px) {
+  .academico {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .academico-cursos {
+    max-height: 320px;
+    overflow-y: hidden;
+    transition: 0.4s;
+  }
+  .academico-cursos.ativo {
+    max-height: 100%;
+  }
+  .ver-mais {
+    display: block;
+  }
+}
+
+@media (max-width: 620px) {
+  .academico .academico-cursos {
+    grid-template-columns: 1fr;
+  }
+  .academico-cursos .curso {
+    padding: 10px 10px 20px;
+  }
+  .academico-cursos .curso p {
+    font-size: 0.8rem;
+    margin: 10px 0 30px;
+  }
+  .academico-cursos .curso a {
+    padding: 20px;
+    bottom: 0;
+  }
+}
