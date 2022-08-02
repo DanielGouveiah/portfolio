@@ -4,7 +4,7 @@
   align-items: center;
   justify-items: start;
   box-sizing: border-box;
-  padding-top: 120px;
+  padding-top: 200px;
   padding-bottom: 120px;
   gap: 20px;
   color: white;
@@ -79,6 +79,7 @@
 @media (max-width: 400px) {
   .intro {
     grid-template-columns: 1fr;
+    padding-top: 120px;
   }
 
   .intro-img {

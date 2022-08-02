@@ -1,0 +1,72 @@
+.academico {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.js .academico {
+  opacity: 0;
+}
+
+.js .academico.ativo {
+  opacity: 1;
+  animation: fade-right 0.4s forwards;
+}
+
+.academico .academico-texto p {
+  color: var(--light-grey);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4rem;
+  margin: 20px 0px;
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 1.5%;
+  line-height: 1.6rem;
+}
+
+.academico .academico-cursos {
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.academico-cursos .curso {
+  background-color: black;
+  padding: 20px;
+  color: var(--light-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 8px;
+}
+
+.academico-cursos .curso a {
+  color: var(--destaque2);
+  text-decoration: underline;
+  align-self: center;
+  justify-self: end;
+  transform: 0.3s;
+}
+.academico-cursos .curso a:hover {
+  color: white;
+}
+
+.academico-cursos .curso span {
+  font-size: 0.8rem;
+}
+
+.academico-cursos .curso p {
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.academico-cursos .curso h3.facul {
+  color: var(--destaque1);
+}
+
+.academico-cursos .curso h3 {
+  color: var(--destaque2);
+  font-size: 1.2rem;
+}
