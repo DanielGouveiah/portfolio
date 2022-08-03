@@ -66,7 +66,7 @@
 @media (max-width: 800px) {
   .intro {
     grid-template-columns: 1fr;
-    justify-items: start;
+    justify-items: center;
   }
   .intro-img {
     order: -1;
@@ -80,6 +80,13 @@
   .intro {
     grid-template-columns: 1fr;
     padding-top: 120px;
+  }
+  .conteudo {
+    width: 100%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .intro-img {

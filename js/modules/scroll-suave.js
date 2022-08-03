@@ -2,15 +2,18 @@ export default class ScrollSuave {
   constructor(links) {
     this.links = document.querySelectorAll(links);
     this.events = ["touch", "click"];
+    this.options = {
+      behavior: "smooth",
+    };
+    this.scrollSuave = this.scrollSuave.bind(this);
   }
 
   scrollSuave(e) {
     e.preventDefault();
-    const section = document.querySelector(e.target.hash);
-    const sectionTop = section.getBoundingClientRect().top;
-    setTimeout(() => {
-      window.scroll({ top: sectionTop, behavior: "smooth" });
-    }, 0);
+    console.log(e.currentTarget);
+    const href = e.currentTarget.getAttribute("href");
+    const section = document.querySelector(href);
+    section.scrollIntoView(this.options);
   }
 
   addElementEvents() {
