@@ -53,7 +53,7 @@
 
 .projetos-lista .projeto .projeto-links a {
   padding: 10px;
-  animation: slide-bottom 1s forwards;
+  animation: slide-bottom-links 0.5s forwards;
 }
 
 .projetos-lista .projeto.breve {
@@ -119,6 +119,17 @@
 @keyframes slide-bottom {
   from {
     transform: translate3d(0, -4px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-bottom-links {
+  from {
+    transform: translate3d(-120px, 0, 0);
     opacity: 0;
   }
   to {
