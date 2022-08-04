@@ -6,6 +6,15 @@
   padding-bottom: 120px;
 }
 
+.js .projetos {
+  opacity: 0;
+}
+
+.js .projetos.ativo {
+  opacity: 1;
+  animation: fade-left 1s forwards;
+}
+
 .projetos-lista {
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 280px));
