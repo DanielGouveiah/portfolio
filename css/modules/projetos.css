@@ -9,7 +9,7 @@
 .projetos-lista {
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 280px));
-  gap: 80px;
+  gap: 20px;
 }
 
 .projetos-lista .projeto {
@@ -49,13 +49,7 @@
 }
 
 .projetos-lista .projeto.breve {
-  background-color: black;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
-  width: 250px;
 }
 
 .projetos-lista .projeto.breve .projeto-bg span {
