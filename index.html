@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/svg">
   <link rel="stylesheet" href="./css/style.css">
   <title>Daniel Gouveia | Desenvolvedor Front-end</title>
 </head>
@@ -55,7 +56,7 @@
 
     <div class="sobre-conteudo">
       <h2 class="title">Sobre Mim</h2>
-      <p> Me chamo Daniel Gouveia, sou estudante de desenvolvimento web e UI/UX Design. Após o término do Ensino Médio, me vejo em busca do meu primeiro emprego. Sou apaixonado por tecnologia e realizei vários cursos na área, além disso, já desenvolvi alguns projetos próprios. Espero receber esta oportunidade de provar meu valor e aprender muitas coisas novas com os desafios propostos pela carreira!</p>
+      <p class="texto"> Me chamo Daniel Gouveia, sou estudante de desenvolvimento web e UI/UX Design. Após o término do Ensino Médio, me vejo em busca do meu primeiro emprego. Sou apaixonado por tecnologia e realizei vários cursos na área, além disso, já desenvolvi alguns projetos próprios. Espero receber esta oportunidade de provar meu valor e aprender muitas coisas novas com os desafios propostos pela carreira!</p>
       <ul class="sobre-btns">
         <a href="https://www.linkedin.com/in/daniel-barbosa-425036220" target="_blank" class="sobre-btn">Linkedin <img src="./assets/person.svg" alt=""></a>
         <a href="./assets/curriculo.pdf" class="sobre-btn" download>Currículo <img src="./assets/download.svg" alt=""></a>
@@ -63,10 +64,10 @@
     </div>
   </section>
 
-  <section class="academico container" id="academico" aria-label="Acadêmico" data-anime="scroll">
+  <section class="academico container " id="academico" aria-label="Acadêmico" data-anime="scroll">
     <div class="academico-texto">
       <h2 class="title">Acadêmico</h2>
-      <p>Venha ver alguns dos cursos que estou fazendo ou que já terminei. Assim você pode ver, como adquiri os meus conhecimentos e de onde vêm a minha base de programação e design web...</p>
+      <p class="texto">Venha ver alguns dos cursos que estou fazendo ou que já terminei. Assim você pode ver, como adquiri os meus conhecimentos e de onde vêm a minha base de programação e design web...</p>
     </div>
     <div class="academico-cursos">
       <div class="curso">
@@ -102,8 +103,58 @@
         <p>Curso de fundamentos para a lógica de programação. Este foi o primeiro curso que fiz na área de TI.</p>
       </div>
     </div>
-    <button class="ver-mais">Ver mais</button>
+    <button class="ver-mais" id="ver-cursos">Ver mais</button>
     </div>
+  </section>
+
+  <section class="projetos container" id="projetos" aria-label="Projetos" data-anime="scroll">
+
+    <div class="projetos-texto">
+      <h2 class="title">Projetos</h2>
+      <p class="texto">Já que chegou até aqui... por que não checa os meus projetos? Ah, logo estarei adicionando projetos novos e completos!</p>
+    </div>
+
+    <div class="projetos-lista">
+      <div class="projeto">
+        <div class="projeto-bg">
+          <img src="assets/projetos-dojo-blog.jpg" alt="Projeto de blog">
+        </div>
+        <div class="projeto-links">
+          <a href=""><img src="assets/github.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="projeto">
+        <div class="projeto-bg">
+          <img src="assets/projetos-bikcraft.jpg" alt="Projeto Bikcraft">
+        </div>
+        <div class="projeto-links">
+          <a href=""><img src="assets/web.svg" alt=""></a>
+          <a href=""><img src="assets/github.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="projeto">
+        <div class="projeto-bg">
+          <img src="assets/projetos-animais.jpg" alt="Projeto Animais Fantásticos">
+        </div>
+        <div class="projeto-links">
+          <a href=""><img src="assets/web.svg" alt=""></a>
+          <a href=""><img src="assets/github.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="projeto breve">
+        <div class="projeto-bg">
+          <span>EM BREVE!</span>
+        </div>
+        <div class="projeto-links">
+          <p>Projeto em React que ainda está em desenvolvimento, assim que possivel será lançado aqui!</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <button class="ver-mais" id="ver-projetos">Ver mais</button>
   </section>
 
   <script src="./js/script.js" type="module"></script>

@@ -67,16 +67,6 @@
   align-items: start;
 }
 
-.sobre .sobre-conteudo p {
-  color: var(--light-grey);
-  font-weight: 400;
-  font-size: 1.1rem;
-  letter-spacing: 1.5%;
-  line-height: 1.6rem;
-  margin: 20px 0px 80px;
-  font-family: "Roboto", sans-serif;
-}
-
 .sobre .sobre-conteudo .sobre-btns {
   display: flex;
   gap: 10px;
@@ -110,16 +100,9 @@
   .sobre .perfil .perfil-img {
     display: none;
   }
-  .sobre .sobre-conteudo p {
-    margin: 20px 0px;
-    font-size: 1.2rem;
-  }
 }
 
 @media (max-width: 400px) {
-  .sobre .sobre-conteudo p {
-    font-size: 1rem;
-  }
   .sobre .sobre-conteudo .sobre-btns {
     flex-direction: column;
     justify-self: start;

@@ -7,8 +7,11 @@ import initTitleAnimation from "./modules/title-animation.js";
 const scrollSuave = new ScrollSuave(".menu li a");
 scrollSuave.init();
 
-const showMoreCursos = new ShowMore(".ver-mais", ".academico-cursos");
+const showMoreCursos = new ShowMore("#ver-cursos", ".academico-cursos");
 showMoreCursos.init();
+
+const showMoreProjetos = new ShowMore("#ver-projetos", ".projetos-lista");
+showMoreProjetos.init();
 
 initAnimarScroll();
 initMenuMobile();

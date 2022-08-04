@@ -1,0 +1,113 @@
+.projetos {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.projetos-lista {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 280px));
+  gap: 80px;
+}
+
+.projetos-lista .projeto {
+  max-width: 250px;
+  max-height: 250px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.projetos-lista .projeto .projeto-bg img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.projetos-lista .projeto .projeto-links {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  transform: translate3d(0, -4px, 0);
+  transition: 0.2s;
+  border-radius: 8px;
+}
+.projetos-lista .projeto:hover .projeto-links {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.projetos-lista .projeto .projeto-links a {
+  padding: 10px;
+}
+
+.projetos-lista .projeto.breve {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+}
+
+.projetos-lista .projeto.breve .projeto-bg span {
+  font-size: 1.4rem;
+}
+
+.projetos-lista .projeto.breve .projeto-links {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+@media (max-width: 1200px) {
+  .projetos-lista {
+    grid-template-columns: repeat(2, minmax(200px, 280px));
+  }
+}
+
+@media (max-width: 1000px) {
+  .projetos {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .projetos-lista {
+    gap: 10px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .projetos {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .projetos-lista .projeto {
+    max-width: 200px;
+    max-height: 200px;
+    position: relative;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 560px) {
+  .projetos-lista {
+    gap: 20px;
+    grid-template-columns: 1fr;
+    max-height: 420px;
+    overflow-y: hidden;
+    margin-bottom: 20px;
+  }
+
+  .projetos-lista.ativo {
+    max-height: 100%;
+  }
+}
