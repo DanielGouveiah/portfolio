@@ -9,7 +9,7 @@ export default class ShowMore {
   }
 
   goTop() {
-    this.listaParent.scrollIntoView({ behavior: "smooth" });
+    this.listaParent.scrollIntoView();
   }
 
   showMore() {
