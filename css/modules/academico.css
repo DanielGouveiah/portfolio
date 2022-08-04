@@ -15,17 +15,6 @@
   animation: fade-right 0.4s forwards;
 }
 
-.academico .academico-texto p {
-  color: var(--light-grey);
-  font-family: "Roboto", sans-serif;
-  line-height: 1.4rem;
-  margin: 20px 0px;
-  font-weight: 400;
-  font-size: 1.1rem;
-  letter-spacing: 1.5%;
-  line-height: 1.6rem;
-}
-
 .academico .academico-cursos {
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 280px));
@@ -74,24 +63,6 @@
   font-size: 1.2rem;
 }
 
-.ver-mais {
-  display: none;
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
-  font-size: 1rem;
-  border-radius: 20px;
-  cursor: pointer;
-  text-transform: uppercase;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-  border: 2px solid black;
-  outline: none;
-  transition: 0.3s;
-}
-.ver-mais:hover {
-  opacity: 0.8;
-}
-
 @media (max-width: 1200px) {
   .academico .academico-cursos {
     grid-template-columns: repeat(2, 280px);
@@ -110,12 +81,13 @@
   .academico-cursos.ativo {
     max-height: 100%;
   }
-  .ver-mais {
-    display: block;
-  }
 }
 
 @media (max-width: 620px) {
+  .academico {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
   .academico .academico-cursos {
     grid-template-columns: 1fr;
   }

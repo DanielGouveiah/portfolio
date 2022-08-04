@@ -42,8 +42,36 @@ section {
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: white;
+}
+.texto {
+  color: var(--light-grey);
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 1.5%;
+  line-height: 1.6rem;
+  margin: 20px 0px 80px;
+  font-family: "Roboto", sans-serif;
+}
+
+.ver-mais {
+  display: none;
+  padding: 10px 20px;
+  justify-self: center;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  outline: none;
+  transition: 0.3s;
+}
+.ver-mais:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 800px) {
@@ -58,12 +86,24 @@ section {
   body::-webkit-scrollbar {
     width: 0px;
   }
+
+  .texto {
+    margin: 20px 0px;
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 400px) {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .texto {
+    font-size: 1rem;
+  }
+
+  .ver-mais {
+    display: block;
   }
 }
 
