@@ -93,6 +93,12 @@ section {
   }
 }
 
+@media (max-width: 500px) {
+  .ver-mais {
+    display: block;
+  }
+}
+
 @media (max-width: 400px) {
   .container {
     padding-left: 20px;
@@ -100,10 +106,6 @@ section {
   }
   .texto {
     font-size: 1rem;
-  }
-
-  .ver-mais {
-    display: block;
   }
 }
 

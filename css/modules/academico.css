@@ -81,6 +81,9 @@
   .academico-cursos.ativo {
     max-height: 100%;
   }
+  #ver-cursos {
+    display: block;
+  }
 }
 
 @media (max-width: 620px) {
