@@ -118,7 +118,7 @@
 
 @keyframes slide-bottom {
   from {
-    transform: translate3d(0, -4px, 0);
+    transform: translate3d(-20px, 0, 0);
     opacity: 0;
   }
   to {
