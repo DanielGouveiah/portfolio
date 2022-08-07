@@ -1,17 +1,22 @@
-export default function initTitleAnimation() {
-  const title = document.querySelector(".conteudo h1");
-  const oldTitle = title.innerText.split("");
-  title.innerText = "";
-
-  let i = 400;
-  function blinkText(char) {
-    setTimeout(() => {
-      title.innerText += char;
-    }, i);
-    i += 200;
+export default class TitleAnimation {
+  constructor(element) {
+    this.title = document.querySelector(element);
+    this.oldTitle = this.title.innerText.split("");
+    this.cont = 200;
+    this.blinkText = this.blinkText.bind(this);
   }
 
-  oldTitle.forEach((char) => {
-    blinkText(char === undefined ? " " : char);
-  });
+  blinkText(char) {
+    setTimeout(() => {
+      this.title.innerText += char;
+    }, this.cont);
+    this.cont += 100;
+  }
+
+  init() {
+    this.title.innerText = "";
+    this.oldTitle.forEach((char) => {
+      this.blinkText(char === undefined ? " " : char);
+    });
+  }
 }
