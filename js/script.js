@@ -1,5 +1,5 @@
 import initAnimarScroll from "./modules/animar-scroll.js";
-import initMenuMobile from "./modules/menu-mobile.js";
+import MenuMobile from "./modules/menu-mobile.js";
 import ScrollSuave from "./modules/scroll-suave.js";
 import ShowMore from "./modules/show-more.js";
 import initTitleAnimation from "./modules/title-animation.js";
@@ -13,8 +13,11 @@ showMoreCursos.init();
 const showMoreProjetos = new ShowMore("#ver-projetos", ".projetos-lista");
 showMoreProjetos.init();
 
+const menuBtn = new MenuMobile(".menu-mobile", ".menu");
+
+menuBtn.init();
+
 initAnimarScroll();
-initMenuMobile();
 initTitleAnimation();
 
 document.documentElement.classList.add("js");

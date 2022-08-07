@@ -1,35 +1,45 @@
-export default function initMenuMobile() {
-  const btnMobile = document.querySelector(".menu-mobile");
-  const menuMobile = document.querySelector(".menu");
-  const events = ["touch", "click"];
-  function outSideClick(e) {
-    if (e.target !== menuMobile) {
-      if (menuMobile.hasAttribute("data-outside")) {
-        menuMobile.classList.remove("ativo");
-        menuMobile.removeAttribute("data-outside");
-        btnMobile.removeAttribute("data-outside", "");
+export default class MenuMobile {
+  constructor(menuBtn, menuList) {
+    this.menuBtn = document.querySelector(menuBtn);
+    this.menuList = document.querySelector(menuList);
+    this.events = ["touch", "click"];
+    this.toggleMenu = this.toggleMenu.bind(this);
+    this.outSideClick = this.outSideClick.bind(this);
+  }
 
-        events.forEach((userEvent) => {
+  outSideClick(e) {
+    if (e.target !== this.menuList) {
+      if (this.menuList.hasAttribute("data-outside")) {
+        this.menuList.classList.remove("ativo");
+        this.menuList.removeAttribute("data-outside");
+        this.menuBtn.removeAttribute("data-outside", "");
+
+        this.events.forEach((userEvent) => {
           setTimeout(() => {
-            window.removeEventListener(userEvent, outSideClick);
+            window.removeEventListener(userEvent, this.outSideClick);
           }, 0);
         });
       }
     }
   }
 
-  function toggleMenuMobile(e) {
-    if (!menuMobile.classList.contains("ativo")) {
-      menuMobile.classList.add("ativo");
-      menuMobile.setAttribute("data-outside", "");
-      btnMobile.setAttribute("data-outside", "");
+  toggleMenu(e) {
+    if (!this.menuList.classList.contains("ativo")) {
+      this.menuList.classList.add("ativo");
+      this.menuList.setAttribute("data-outside", "");
+      this.menuBtn.setAttribute("data-outside", "");
     }
-    events.forEach((userEvent) => {
+    this.events.forEach((userEvent) => {
       setTimeout(() => {
-        window.addEventListener(userEvent, outSideClick);
+        window.addEventListener(userEvent, this.outSideClick);
       }, 0);
     });
   }
 
-  btnMobile.addEventListener("click", toggleMenuMobile);
+  init() {
+    this.events.forEach((userEvent) => {
+      this.menuBtn.addEventListener(userEvent, this.toggleMenu);
+    });
+    return this;
+  }
 }
