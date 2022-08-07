@@ -20,7 +20,7 @@
 .sobre .perfil .perfil-img {
   max-width: 400px;
   height: 250px;
-  background: url(../../assets/perfil.jpg), no-repeat;
+  background: url(./../assets/perfil.jpg), no-repeat;
   border-radius: 6px;
   border: 3px solid black;
   position: relative;
