@@ -1,4 +1,4 @@
-import initAnimarScroll from "./modules/animar-scroll.js";
+import AnimarScroll from "./modules/animar-scroll.js";
 import MenuMobile from "./modules/menu-mobile.js";
 import ScrollSuave from "./modules/scroll-suave.js";
 import ShowMore from "./modules/show-more.js";
@@ -14,10 +14,11 @@ const showMoreProjetos = new ShowMore("#ver-projetos", ".projetos-lista");
 showMoreProjetos.init();
 
 const menuBtn = new MenuMobile(".menu-mobile", ".menu");
-
 menuBtn.init();
 
-initAnimarScroll();
+const animarScroll = new AnimarScroll("[data-anime='scroll']");
+animarScroll.init();
+
 initTitleAnimation();
 
 document.documentElement.classList.add("js");

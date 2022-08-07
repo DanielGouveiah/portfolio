@@ -1,15 +1,24 @@
-export default function initAnimarScroll() {
-  const sections = document.querySelectorAll("[data-anime='scroll']");
-  const halfWindow = window.innerHeight * 0.5;
+export default class AnimarScroll {
+  constructor(elements) {
+    this.sections = document.querySelectorAll(elements);
+    this.halfWindow = window.innerHeight * 0.5;
+    this.animarScroll = this.animarScroll.bind(this);
+  }
 
-  function animarScroll() {
-    sections.forEach((section) => {
+  animarScroll() {
+    this.sections.forEach((section) => {
       const sectionTop = section.getBoundingClientRect().top;
-      if (sectionTop <= halfWindow) {
+      if (sectionTop <= this.halfWindow) {
         section.classList.add("ativo");
       }
     });
   }
-  animarScroll();
-  window.addEventListener("scroll", animarScroll);
+
+  init() {
+    if (this.sections.length) {
+      this.animarScroll();
+      window.addEventListener("scroll", this.animarScroll);
+    }
+    return this;
+  }
 }
