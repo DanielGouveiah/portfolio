@@ -7,6 +7,8 @@ export default function initMenuMobile() {
       if (menuMobile.hasAttribute("data-outside")) {
         menuMobile.classList.remove("ativo");
         menuMobile.removeAttribute("data-outside");
+        btnMobile.removeAttribute("data-outside", "");
+
         events.forEach((userEvent) => {
           setTimeout(() => {
             window.removeEventListener(userEvent, outSideClick);
@@ -20,6 +22,7 @@ export default function initMenuMobile() {
     if (!menuMobile.classList.contains("ativo")) {
       menuMobile.classList.add("ativo");
       menuMobile.setAttribute("data-outside", "");
+      btnMobile.setAttribute("data-outside", "");
     }
     events.forEach((userEvent) => {
       setTimeout(() => {

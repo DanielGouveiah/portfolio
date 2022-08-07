@@ -10,6 +10,8 @@ body {
   background-color: var(--principal);
   font-family: "Rubik", sans-serif;
   overflow-x: hidden;
+  display: grid;
+  justify-content: center;
 }
 
 body::-webkit-scrollbar {
@@ -35,6 +37,7 @@ h3 {
 .container {
   padding-left: 120px;
   padding-right: 120px;
+  max-width: 1400px;
 }
 
 section {
