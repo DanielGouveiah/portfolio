@@ -23,7 +23,7 @@ body {
   gap: 10px;
   box-shadow: 4px 0px 12px rgba(0, 0, 0, 0.4);
   left: 0;
-  top: 30%;
+  top: 35%;
   background-color: black;
   padding: 30px 8px;
   border-radius: 0px 20px 20px 0px;
@@ -31,7 +31,7 @@ body {
 
 .js .social-side-container.ativo .social-side {
   display: flex;
-  animation: fade-right 0.8 forwards;
+  animation: fade-right 1s forwards;
   z-index: 999;
 }
 
@@ -108,7 +108,7 @@ section {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: url(../../assets/arrow-up.svg) no-repeat center rgba(0, 0, 0, 0.5);
+  background: url(./../assets/arrow-up.svg) no-repeat center rgba(0, 0, 0, 0.5);
   background-size: 1.4rem;
 }
 
