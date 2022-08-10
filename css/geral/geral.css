@@ -9,7 +9,7 @@
 body {
   background-color: var(--principal);
   font-family: "Rubik", sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   display: grid;
   position: relative;
   box-shadow: inset 0px -10px 20px 4px rgba(0, 0, 0, 0.4);
@@ -103,12 +103,13 @@ section {
   padding: 20px;
   position: fixed;
   z-index: 999;
-  right: 20px;
-  bottom: 80px;
+  right: 1rem;
+  bottom: 2rem;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: url(./../assets/arrow-up.svg) no-repeat center rgba(0, 0, 0, 0.5);
+  background: url(./../assets/arrow-up.svg) no-repeat center black;
+  opacity: 0.6;
   background-size: 1.4rem;
 }
 
@@ -135,7 +136,7 @@ section {
   .ver-mais {
     display: block;
   }
-  .to-top-wrpp .to-top {
+  .to-top-wrpp.ativo .to-top {
     display: block;
     animation: fade-left 0.4s forwards;
   }
