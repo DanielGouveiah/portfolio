@@ -4,6 +4,8 @@ import ScrollSuave from "./modules/scroll-suave.js";
 import ShowMore from "./modules/show-more.js";
 import TitleAnimation from "./modules/title-animation.js";
 
+document.documentElement.classList.add("js");
+
 const scrollSuave = new ScrollSuave(".menu li a");
 scrollSuave.init();
 
@@ -21,5 +23,3 @@ animarScroll.init();
 
 const titleAnimation = new TitleAnimation(".conteudo h1");
 titleAnimation.init();
-
-document.documentElement.classList.add("js");
