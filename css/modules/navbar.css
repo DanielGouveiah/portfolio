@@ -15,7 +15,6 @@
   box-shadow: 0px 4px 10px var(--shadow);
   position: relative;
   box-sizing: border-box;
-  animation: fade-bottom 1s forwards;
 }
 
 .nav .logo img {
