@@ -12,7 +12,7 @@
 
 .js .academico.ativo {
   opacity: 1;
-  animation: fade-right 1s forwards;
+  animation: fade-top 1s forwards;
 }
 
 .academico .academico-cursos {

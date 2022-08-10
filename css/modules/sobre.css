@@ -14,7 +14,7 @@
 
 .js .sobre.ativo {
   opacity: 1;
-  animation: fade-left 1s forwards;
+  animation: fade-bottom 1s forwards;
 }
 
 .sobre .perfil .perfil-img {

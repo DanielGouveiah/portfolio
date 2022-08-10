@@ -12,7 +12,7 @@
 
 .js .projetos.ativo {
   opacity: 1;
-  animation: fade-left 1s forwards;
+  animation: fade-bottom 1s forwards;
 }
 
 .projetos-lista {

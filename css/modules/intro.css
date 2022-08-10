@@ -19,7 +19,7 @@
 .js .intro.ativo {
   opacity: 1;
   display: grid;
-  animation: fade-right 1s forwards;
+  animation: fade-top 1s forwards;
 }
 
 .conteudo .saudacao {
