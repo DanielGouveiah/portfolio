@@ -11,7 +11,28 @@ body {
   font-family: "Rubik", sans-serif;
   overflow-x: hidden;
   display: grid;
+  position: relative;
+  box-shadow: inset 0px -10px 20px 4px rgba(0, 0, 0, 0.4);
   justify-content: center;
+}
+
+.social-side-container .social-side {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  gap: 10px;
+  box-shadow: 4px 0px 12px rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 30%;
+  background-color: black;
+  padding: 30px 8px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.js .social-side-container.ativo .social-side {
+  display: flex;
+  animation: fade-right 0.8s forwards;
+  z-index: 999;
 }
 
 body::-webkit-scrollbar {
@@ -109,6 +130,9 @@ section {
   }
   .texto {
     font-size: 1rem;
+  }
+  .js .social-side-container.ativo .social-side {
+    display: none;
   }
 }
 
