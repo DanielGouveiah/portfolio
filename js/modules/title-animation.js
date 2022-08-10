@@ -14,9 +14,12 @@ export default class TitleAnimation {
   }
 
   init() {
-    this.title.innerText = "";
-    this.oldTitle.forEach((char) => {
-      this.blinkText(char === undefined ? " " : char);
-    });
+    if (this.title) {
+      this.title.innerText = "";
+      this.oldTitle.forEach((char) => {
+        this.blinkText(char === undefined ? " " : char);
+      });
+    }
+    return this;
   }
 }

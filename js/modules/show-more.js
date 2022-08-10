@@ -36,7 +36,9 @@ export default class ShowMore {
   }
 
   init() {
-    this.addEventElements();
+    if (this.showBtn && this.lista) {
+      this.addEventElements();
+    }
     return this;
   }
 }
