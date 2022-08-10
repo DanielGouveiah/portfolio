@@ -9,6 +9,9 @@ document.documentElement.classList.add("js");
 const scrollSuave = new ScrollSuave(".menu li a");
 scrollSuave.init();
 
+const scrollToTop = new ScrollSuave(".to-top");
+scrollToTop.init();
+
 const showMoreCursos = new ShowMore("#ver-cursos", ".academico-cursos");
 showMoreCursos.init();
 

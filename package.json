@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "css": "cleancss -o ./css/style.min.css ./css/style.css --watch",
+    "css": "cleancss -o ./css/style.min.css ./css/style.css",
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production"
   },

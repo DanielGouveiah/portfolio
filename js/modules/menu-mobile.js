@@ -37,9 +37,11 @@ export default class MenuMobile {
   }
 
   init() {
-    this.events.forEach((userEvent) => {
-      this.menuBtn.addEventListener(userEvent, this.toggleMenu);
-    });
+    if (this.menuList && this.menuBtn) {
+      this.events.forEach((userEvent) => {
+        this.menuBtn.addEventListener(userEvent, this.toggleMenu);
+      });
+    }
     return this;
   }
 }

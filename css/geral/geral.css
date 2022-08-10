@@ -31,7 +31,7 @@ body {
 
 .js .social-side-container.ativo .social-side {
   display: flex;
-  animation: fade-right 0.8s forwards;
+  animation: fade-right 0.8 forwards;
   z-index: 999;
 }
 
@@ -98,6 +98,20 @@ section {
   opacity: 0.8;
 }
 
+.to-top-wrpp .to-top {
+  display: none;
+  padding: 20px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 80px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: url(../../assets/arrow-up.svg) no-repeat center rgba(0, 0, 0, 0.5);
+  background-size: 1.4rem;
+}
+
 @media (max-width: 800px) {
   .container {
     padding-left: 80px;
@@ -120,6 +134,10 @@ section {
 @media (max-width: 500px) {
   .ver-mais {
     display: block;
+  }
+  .to-top-wrpp .to-top {
+    display: block;
+    animation: fade-left 0.4s forwards;
   }
 }
 
