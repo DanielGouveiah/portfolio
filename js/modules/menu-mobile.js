@@ -23,7 +23,7 @@ export default class MenuMobile {
     }
   }
 
-  toggleMenu(e) {
+  toggleMenu() {
     if (!this.menuList.classList.contains("ativo")) {
       this.menuList.classList.add("ativo");
       this.menuList.setAttribute("data-outside", "");
