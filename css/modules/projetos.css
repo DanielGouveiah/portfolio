@@ -114,6 +114,10 @@
     overflow-y: hidden;
     margin-bottom: 20px;
   }
+
+  .projetos-lista .projeto {
+    max-width: 200px;
+  }
 }
 
 @keyframes slide-bottom {
