@@ -136,6 +136,9 @@ section {
     margin: 20px 0px;
     font-size: 1.2rem;
   }
+  .js .social-side-container.ativo .social-side {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
@@ -151,9 +154,6 @@ section {
   }
   .texto {
     font-size: 1rem;
-  }
-  .js .social-side-container.ativo .social-side {
-    display: none;
   }
 }
 

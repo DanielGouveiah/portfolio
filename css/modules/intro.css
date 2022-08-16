@@ -37,6 +37,7 @@
 .conteudo h1 {
   font-size: 2.8rem;
   margin: 10px 0px;
+  min-width: 14ch;
   text-transform: uppercase;
   color: #55c1ff;
 }
@@ -86,7 +87,7 @@
     justify-self: center;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding-left: 10px;
   }
 
@@ -94,7 +95,7 @@
     max-width: 200px;
   }
   .conteudo h1 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   .conteudo .saudacao {
     font-size: 1rem;

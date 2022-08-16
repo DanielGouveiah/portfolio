@@ -10,7 +10,7 @@ export default class TitleAnimation {
     setTimeout(() => {
       this.title.innerText += char;
     }, this.cont);
-    this.cont += 100;
+    this.cont += 200 * Math.random();
   }
 
   init() {
