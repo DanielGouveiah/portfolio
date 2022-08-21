@@ -22,7 +22,9 @@
   font-family: "Roboto", sans-serif;
 }
 .academico-cursos .curso {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid black;
+  backdrop-filter: blur(3px);
   padding: 20px;
   color: var(--light-grey);
   display: flex;
@@ -32,7 +34,6 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   position: relative;
 }
-
 .academico-cursos .curso a {
   color: var(--destaque2);
   text-decoration: underline;

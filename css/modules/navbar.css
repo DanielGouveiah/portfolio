@@ -8,6 +8,7 @@
 
 .nav {
   background-color: var(--principal);
+  backdrop-filter: blur(6px);
   padding: 0px 40px;
   display: flex;
   justify-content: space-between;
@@ -30,7 +31,7 @@
 .nav .menu-mobile {
   display: none;
   padding: 10px;
-  background-color: var(--principal);
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
@@ -80,7 +81,6 @@
   top: 0;
   transform: rotate(-45deg);
 }
-
 .nav .menu a {
   padding: 22px;
   transition: 0.3s;
@@ -96,6 +96,10 @@
   }
   .nav .menu {
     display: none;
+  }
+
+  .nav .menu-mobile:focus {
+    background-color: initial !important;
   }
 
   .nav .menu.ativo {
