@@ -1,0 +1,75 @@
+:root {
+  --font1-1: "Share Tech Mono", monospace;
+  --font1-2: "Share Tech", helvetica;
+  --primary: #571990;
+  --secondary: #9e3bfc;
+  --text-1: #121212;
+  --text-2: #4d4d4d;
+  --text-3: #333333;
+  --text-4: #5d5d5d;
+  --text-5: #f1f1f1;
+  --xxl: clamp(3rem, 5vw, 4rem);
+  --xl: clamp(2.4rem, 5vw, 3rem);
+  --x: clamp(1.8rem, 4vw, 2rem);
+  --md: clamp(1.2rem, 3vw, 1.6rem);
+  --p: clamp(1rem, 2vw, 1.2rem);
+  --pp: clamp(0.6rem, 2vw, 0.8rem);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  min-width: 320px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  color: #121212;
+  background-color: #121212;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+svg,
+img {
+  max-width: 100%;
+}
+
+.logo .key {
+  transition: 0.2s;
+}
+
+.logo:hover .key,
+.logo:focus .key {
+  fill: var(--secondary);
+}
+
+h1::selection,
+h2::selection,
+span::selection,
+p::selection,
+img::selection,
+a::selection,
+button::selection,
+li::selection {
+  background-color: var(--secondary);
+  color: white;
+}

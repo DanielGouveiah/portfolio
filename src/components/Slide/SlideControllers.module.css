@@ -1,0 +1,53 @@
+.controllers {
+  display: flex;
+  width: 120%;
+  align-items: center;
+  position: absolute;
+  justify-self: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size: var(--p);
+  padding: 1rem;
+}
+
+.controllers .controller {
+  width: 60px;
+  height: 60px;
+  background: black url("../../assets/arrow.svg") no-repeat center center;
+  background-size: 1rem;
+  color: white;
+  border-radius: 50%;
+  border: 2px solid black;
+  transition: 0.2s;
+}
+
+.controllers .left {
+  transform: rotate(180deg);
+}
+
+.count {
+  font-family: var(--font1-1);
+  display: none;
+}
+
+.controllers .controller:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .count {
+    font-family: var(--font1-1);
+    display: block;
+  }
+  .controllers {
+    width: 100%;
+    position: relative;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .controllers .controller:hover {
+    opacity: 1;
+  }
+}

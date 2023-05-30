@@ -1,0 +1,36 @@
+.footer {
+  background-color: black;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  color: #f1f1f1;
+  font-family: var(--font1-1);
+  font-size: var(--p);
+}
+
+.footer p a {
+  color: var(--secondary);
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  transition: 0.2s;
+}
+
+.footer p a:hover {
+  color: #ad57ff;
+  transform: scale(1.02);
+}
+
+.footer p a:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  position: absolute;
+  left: 0;
+}

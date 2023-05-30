@@ -1,0 +1,40 @@
+.projects {
+  display: grid;
+  justify-content: center;
+  position: relative;
+  background: #f1f1f1;
+  padding: clamp(4rem, 10vw, 6rem) 0;
+  justify-items: center;
+}
+
+.projectsWrpp {
+  opacity: 0;
+}
+.projects.active .projectsWrpp {
+  animation: 0.8s slideIn 1s forwards;
+}
+
+.projects .more {
+  display: block;
+  font-family: var(--font1-2);
+  font-size: var(--p);
+  color: var(--primary);
+  font-weight: medium;
+  text-decoration: none;
+  opacity: 0;
+  transition: 0.2s;
+}
+.projects.active .more {
+  animation: 0.8s slideInL 2s forwards;
+}
+.more:hover {
+  color: var(--secondary);
+  transform: scale(1.1);
+}
+.more::after {
+  content: "";
+  width: 100%;
+  display: block;
+  height: 2px;
+  background-color: currentColor;
+}

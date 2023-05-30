@@ -1,0 +1,77 @@
+.contactsWrpp {
+  background-color: var(--text-1);
+  display: grid;
+  justify-content: center;
+  position: relative;
+  padding: clamp(4rem, 10vw, 6rem) 0 clamp(1rem, 10vw, 2rem);
+  justify-items: center;
+}
+
+.contactList {
+  display: grid;
+  padding: 4rem 0;
+  opacity: 0;
+  justify-items: center;
+  gap: 20px;
+}
+
+.contactsWrpp.active .contactList {
+  animation: 0.8s slideInL 1s forwards;
+}
+
+.contactList a {
+  width: 140%;
+  height: clamp(4rem, 10vw, 5rem);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.contactList a:hover {
+  transform: translate3d(-10px, -10px, 0);
+  box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.6);
+}
+.contactList a img {
+  transition: 0.3s;
+}
+
+.contactList a:hover img {
+  transform: translate3d(-4px, -4px, 0);
+}
+
+.instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.linkedin {
+  background: linear-gradient(45deg, #00a0dc, #0077b5);
+}
+.github {
+  background: linear-gradient(45deg, #140c0c, #622096);
+}
