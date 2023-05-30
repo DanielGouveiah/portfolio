@@ -6,7 +6,7 @@ const SlideItem = ({ project }) => {
     <li className={styles.slideItem}>
       <img
         className={styles.slideImg}
-        src={project.slideImg}
+        src={project.img}
         alt=""
       />
       <div className={styles.slideInfo}>
