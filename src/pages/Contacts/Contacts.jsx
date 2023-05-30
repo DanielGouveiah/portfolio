@@ -25,7 +25,7 @@ const Contacts = () => {
             <img src={github} />
           </a>
           <a
-            href="https://www.linkedin.com/in/daniel-barbosa-425036220/"
+            href="https://www.linkedin.com/in/danielbarbosadev/"
             target="_blank"
             className="linkedin">
             <img src={linkedin} />
