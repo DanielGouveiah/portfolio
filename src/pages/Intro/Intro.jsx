@@ -1,6 +1,7 @@
 import React from "react";
 import "./Intro.css";
 import avatarIntro from "../../assets/avatar-intro.png";
+import resume from "../../assets/daniel-resume.pdf";
 import Stack from "./Stack";
 
 import handleScroll from "../../utils/handleScroll";
@@ -8,6 +9,15 @@ import { MediaContext } from "../../context/MediaContext";
 
 const Intro = () => {
   const { sections } = React.useContext(MediaContext);
+
+  function download(url) {
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = url.split("/").pop();
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
 
   return (
     <section
@@ -30,9 +40,12 @@ const Intro = () => {
             segundo período do curso de <span>Ciência da computação!</span>
           </p>
           <div className="infos">
-            <button className="infoItem curriculo">baixar currículo</button>
+            <button
+              className="infoItem resume"
+              onClick={() => download(resume)}>
+              baixar currículo
+            </button>
             <a
-              href=""
               className="infoItem"
               onClick={(e) => handleScroll(e, sections.contacts)}>
               contatos
