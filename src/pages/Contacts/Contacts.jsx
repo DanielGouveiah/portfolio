@@ -3,7 +3,7 @@ import "./Contacts.css";
 
 import github from "../../assets/github.svg";
 import linkedin from "../../assets/linkedin.svg";
-import instagram from "../../assets/instagram.svg";
+import gmail from "../../assets/gmail.svg";
 import Title from "../../components/Title/Title";
 
 const Contacts = () => {
@@ -31,10 +31,10 @@ const Contacts = () => {
             <img src={linkedin} />
           </a>
           <a
-            href="https://www.instagram.com/deniels_gouveia/"
+            href="mailto:danielgouveiaah@gmail.com?subject=Contato programação&body=Olá Daniel, gostaria de iniciar uma conversa."
             target="_blank"
-            className="instagram">
-            <img src={instagram} />
+            className="gmail">
+            <img src={gmail} />
           </a>
         </ul>
       </div>

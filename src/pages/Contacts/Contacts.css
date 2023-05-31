@@ -41,33 +41,12 @@
   transform: translate3d(-4px, -4px, 0);
 }
 
-.instagram {
+.gmail {
   background: #f09433;
-  background: -moz-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  background: -moz-linear-gradient(45deg, #a4161a 0%, #ba181b 25%, #dc2743 50%, #e6683c 100%);
+  background: -webkit-linear-gradient(45deg, #a4161a 0%, #ba181b 25%, #dc2743 50%, #e6683c 100%);
+  background: linear-gradient(45deg, #a4161a 0%, #ba181b 25%, #dc2743 50%, #e6683c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4161a', endColorstr='#e6683c',GradientType=1 );
 }
 .linkedin {
   background: linear-gradient(45deg, #00a0dc, #0077b5);
