@@ -24,14 +24,14 @@ const ProjectList = [
   },
   {
     title: "Dojo Blog",
-    text: "Blog simples feito em React.js onde foram utilizados os conceitos básicos da bibliotéca, assim como soluções como React Router e Json Server.",
+    text: "Blog simples feito em React.js onde foram utilizados os conceitos básicos da biblioteca, assim como soluções como React Router e Json Server.",
     img: dojoBlog,
     tags: ["React.js", "CSS"],
     code: "https://github.com/DanielGouveiah/react-dojoBlog",
   },
   {
     title: "Bikcraft",
-    text: "E-commerce fictício de bicicletas eletricas, objeto de estudo onde foram estudados os principais conceitos de HTML5 e CSS3.",
+    text: "Ecommerce fictício de bicicletas eletricas, objeto de estudo onde foram estudados os principais conceitos de HTML5 e CSS3.",
     img: bikcraft,
     tags: ["HTML", "CSS", "Figma"],
     code: "https://github.com/DanielGouveiah/bikcraft",
